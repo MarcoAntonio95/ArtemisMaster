@@ -12,9 +12,13 @@
 		13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37BC2255729E006BF2C6 /* Main.storyboard */; };
 		13CA37C02255729F006BF2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37BF2255729F006BF2C6 /* Assets.xcassets */; };
 		13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */; };
+		13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */; };
+		13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */; };
+		3EEC0AA48B4648FC2CA1717B /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3905F808693975D4572F3B /* Pods_Artemis.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
 		13CA37B52255729E006BF2C6 /* Artemis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artemis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA37B82255729E006BF2C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA37BA2255729E006BF2C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		13CA37BF2255729F006BF2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CA37C22255729F006BF2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CA37C42255729F006BF2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"; sourceTree = "<group>"; };
+		4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.release.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.release.xcconfig"; sourceTree = "<group>"; };
+		CD3905F808693975D4572F3B /* Pods_Artemis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EEC0AA48B4648FC2CA1717B /* Pods_Artemis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				13CA37B72255729E006BF2C6 /* Artemis */,
 				13CA37B62255729E006BF2C6 /* Products */,
+				FF3EBAE356915AC34EBD8B55 /* Pods */,
+				A409D45E71DED79448E1AC55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +65,8 @@
 		13CA37B72255729E006BF2C6 /* Artemis */ = {
 			isa = PBXGroup;
 			children = (
+				13CA37CC2255805E006BF2C6 /* Assets */,
+				13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */,
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
 				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
 				13CA37BC2255729E006BF2C6 /* Main.storyboard */,
@@ -64,6 +77,31 @@
 			path = Artemis;
 			sourceTree = "<group>";
 		};
+		13CA37CC2255805E006BF2C6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A409D45E71DED79448E1AC55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3905F808693975D4572F3B /* Pods_Artemis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF3EBAE356915AC34EBD8B55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */,
+				4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13CA37C72255729F006BF2C6 /* Build configuration list for PBXNativeTarget "Artemis" */;
 			buildPhases = (
+				1138FD206D6D15B1CD46D8EE /* [CP] Check Pods Manifest.lock */,
 				13CA37B12255729E006BF2C6 /* Sources */,
 				13CA37B22255729E006BF2C6 /* Frameworks */,
 				13CA37B32255729E006BF2C6 /* Resources */,
+				3BADD10617CBC4EEE6A64468 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +163,65 @@
 			buildActionMask = 2147483647;
 			files = (
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
+				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
+				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
 				13CA37C02255729F006BF2C6 /* Assets.xcassets in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1138FD206D6D15B1CD46D8EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Artemis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BADD10617CBC4EEE6A64468 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Artemis/Pods-Artemis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Artemis/Pods-Artemis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13CA37B12255729E006BF2C6 /* Sources */ = {
@@ -280,6 +373,7 @@
 		};
 		13CA37C82255729F006BF2C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +391,7 @@
 		};
 		13CA37C92255729F006BF2C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
