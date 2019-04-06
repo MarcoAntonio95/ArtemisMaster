@@ -10,29 +10,87 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Cadastrar View Controller-->
         <scene sceneID="Sya-Ra-jJI">
             <objects>
-                <viewController id="ZTL-7c-S1q" sceneMemberID="viewController">
+                <viewController id="ZTL-7c-S1q" customClass="CadastrarViewController" customModule="Artemis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETf-UW-KQC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TELA PARA CADASTRO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aV-F0-J9R">
-                                <rect key="frame" x="97" y="387" width="181" height="21"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyH-kt-Wlf">
+                                <rect key="frame" x="16" y="217" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kwe-uo-IRl">
+                                <rect key="frame" x="16" y="273" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIb-1E-pAC">
+                                <rect key="frame" x="84" y="496" width="208" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="Cadastrar">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cadastrar:" destination="ZTL-7c-S1q" eventType="touchUpInside" id="HT5-ZV-PCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nag-pg-1NE">
+                                <rect key="frame" x="84" y="543" width="208" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Cancelar">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cancelar:" destination="ZTL-7c-S1q" eventType="touchUpInside" id="aKc-K4-owK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu Nome:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="01t-W9-3Nd">
+                                <rect key="frame" x="16" y="333" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Seu Telefone:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ud-b4-VT4">
+                                <rect key="frame" x="16" y="389" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-1w-ADw">
+                                <rect key="frame" x="16" y="311" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9EO-wj-1hg">
+                                <rect key="frame" x="68" y="53" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.6588235294" green="0.86666666670000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="QfF-NQ-6K9"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="RyH-kt-Wlf" id="6D4-hl-YuH"/>
+                        <outlet property="senhaTF" destination="Kwe-uo-IRl" id="YSV-bd-ccI"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="cancelarSegue" id="7u5-30-4bL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTD-k6-BSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-290" y="-627"/>
+            <point key="canvasLocation" x="644" y="-627.4362818590705"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -42,36 +100,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tela de login podendo cadastrar-se e o icone" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="p1g-84-PMz">
-                                <rect key="frame" x="67" y="232" width="240" height="128"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu email:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1d4-go-CYm">
+                                <rect key="frame" x="29" y="333" width="317" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tela de login podendo cadastrar-se e o icone" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="45a-qa-b1z">
-                                <rect key="frame" x="67" y="232" width="240" height="128"/>
+                                <color key="tintColor" red="0.14901960784313725" green="0.55294117647058827" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hLu-5Y-VbC">
+                                <rect key="frame" x="29" y="383" width="317" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="tintColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTIPObeta.png" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-X2-fYr">
+                                <rect key="frame" x="16" y="160" width="343" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2V-sz-knc">
-                                <rect key="frame" x="152" y="499" width="46" height="30"/>
+                                <rect key="frame" x="82" y="484" width="217" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
+                                <state key="normal" title="ENTRAR!">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <segue destination="b4V-1w-sHi" kind="show" id="zjY-jx-hXf"/>
+                                    <action selector="Logar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPV-ME-mQf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FN-Yq-mev">
+                                <rect key="frame" x="214" y="415" width="132" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="tintColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Esqueci minha senha:">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAf-IV-XtJ">
+                                <rect key="frame" x="82" y="522" width="217" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Cadastrar-se">
+                                    <color key="titleColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Cadastrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDc-DF-mWj"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.6588235294117647" green="0.8666666666666667" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Rlr-dk-bHF"/>
+                    <connections>
+                        <outlet property="emailTF" destination="1d4-go-CYm" id="6eS-Of-A9L"/>
+                        <outlet property="senhaTF" destination="hLu-5Y-VbC" id="Qmv-Wn-AJN"/>
+                        <segue destination="b4V-1w-sHi" kind="show" identifier="homeSegue" id="i3v-zQ-cLK"/>
+                        <segue destination="ZTL-7c-S1q" kind="show" identifier="cadastrarSegue" id="LR2-1n-vHx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="90"/>
+            <point key="canvasLocation" x="644" y="89.505247376311857"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GJX-t0-Jdc">
@@ -112,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDy-ba-yMB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2756" y="89.505247376311857"/>
+            <point key="canvasLocation" x="3695.1999999999998" y="89.505247376311857"/>
         </scene>
         <!--Title-->
         <scene sceneID="BuO-Vu-MBC">
@@ -147,7 +243,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hRr-2b-96W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3434" y="-611"/>
+            <point key="canvasLocation" x="5311.1999999999998" y="-611.24437781109452"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gL5-sW-l8R">
@@ -168,7 +264,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LaX-s4-IlE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4012" y="79.610194902548727"/>
+            <point key="canvasLocation" x="4951.1999999999998" y="79.610194902548727"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9qi-sc-mTu">
@@ -250,7 +346,6 @@
         <!--View Controller-->
         <scene sceneID="Leg-nZ-1OI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aS9-5U-fpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JFk-Um-GCc" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uXS-hC-Ckb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -291,13 +386,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="GhX-Bl-IOu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aS9-5U-fpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2841" y="1685"/>
         </scene>
         <!--Title-->
         <scene sceneID="FWI-uH-EF4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VMB-bP-8tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="lVK-D2-r2u" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yTB-5F-mNo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -326,6 +421,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMB-bP-8tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3870" y="1692"/>
         </scene>
@@ -387,21 +483,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Telal inicial que demonstra o perfil e informacoes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EZ0-jD-CjT">
-                                <rect key="frame" x="67" y="333" width="240" height="128"/>
+                                <rect key="frame" x="16" y="87" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.6588235294" green="0.86666666670000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4eK-Dy-cK1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="oAO-Zl-hUP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXZ-mB-WBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="-627"/>
+            <point key="canvasLocation" x="2636" y="-627.4362818590705"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ABr-OO-ppO">
@@ -420,7 +516,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksp-NM-4y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="758" y="91"/>
+            <point key="canvasLocation" x="1696.8" y="90.404797601199405"/>
         </scene>
         <!--Buscar-->
         <scene sceneID="SxD-Tp-9z4">
@@ -458,9 +554,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEO-91-9yK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="89.505247376311857"/>
+            <point key="canvasLocation" x="2756" y="89.505247376311857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logoTIPObeta.png" width="1240" height="313"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="qWZ-j7-yeH"/>
     </inferredMetricsTieBreakers>

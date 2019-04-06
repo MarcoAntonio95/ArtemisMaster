@@ -7,14 +7,35 @@
 //
 
 import UIKit
-
+import Firebase
 class ViewController: UIViewController {
 
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var senhaTF: UITextField!
+    var email:String?
+    var senha:String?
+    var artemisDao = ArtemisDAO()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+   
     }
 
-
+    @IBAction func Logar(_ sender: Any) {
+        email = emailTF.text!
+        senha = senhaTF.text!
+      
+        if email == "" && senha == ""{
+            let alertController = UIAlertController(title: "Artemis", message:
+                "Preencha todos os campos", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true, completion: nil)
+        } else{
+            artemisDao.autenticar(email!, senha!, self, "login")
+        }
+    }
+    
+    @IBAction func Cadastrar(_ sender: Any) {
+        self.performSegue(withIdentifier: "cadastrarSegue", sender: nil)
+    }
 }
 

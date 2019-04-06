@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133BDB302258077300AA0B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB2F2258077300AA0B29 /* Assets.xcassets */; };
+		133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */; };
+		133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB33225809FD00AA0B29 /* logoTIPObeta.png */; };
+		133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */; };
+		133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB372258160700AA0B29 /* ArtemisDAO.swift */; };
 		13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA37B82255729E006BF2C6 /* AppDelegate.swift */; };
 		13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA37BA2255729E006BF2C6 /* ViewController.swift */; };
 		13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37BC2255729E006BF2C6 /* Main.storyboard */; };
-		13CA37C02255729F006BF2C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37BF2255729F006BF2C6 /* Assets.xcassets */; };
 		13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */; };
 		13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */; };
 		13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */; };
@@ -19,11 +23,15 @@
 
 /* Begin PBXFileReference section */
 		0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
+		133BDB2F2258077300AA0B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artemisIconALLinONE.png; sourceTree = "<group>"; };
+		133BDB33225809FD00AA0B29 /* logoTIPObeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTIPObeta.png; sourceTree = "<group>"; };
+		133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
+		133BDB372258160700AA0B29 /* ArtemisDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisDAO.swift; sourceTree = "<group>"; };
 		13CA37B52255729E006BF2C6 /* Artemis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artemis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA37B82255729E006BF2C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA37BA2255729E006BF2C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13CA37BD2255729E006BF2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13CA37BF2255729F006BF2C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13CA37C22255729F006BF2C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13CA37C42255729F006BF2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -70,9 +78,11 @@
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
 				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
 				13CA37BC2255729E006BF2C6 /* Main.storyboard */,
-				13CA37BF2255729F006BF2C6 /* Assets.xcassets */,
+				133BDB2F2258077300AA0B29 /* Assets.xcassets */,
 				13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */,
 				13CA37C42255729F006BF2C6 /* Info.plist */,
+				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
+				133BDB372258160700AA0B29 /* ArtemisDAO.swift */,
 			);
 			path = Artemis;
 			sourceTree = "<group>";
@@ -81,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */,
+				133BDB33225809FD00AA0B29 /* logoTIPObeta.png */,
+				133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -162,11 +174,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */,
+				133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */,
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
 				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
-				13CA37C02255729F006BF2C6 /* Assets.xcassets in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
+				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +218,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Artemis/Pods-Artemis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -212,6 +227,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -228,7 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,
+				133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */,
 				13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
