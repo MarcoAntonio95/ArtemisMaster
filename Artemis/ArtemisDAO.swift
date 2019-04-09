@@ -10,10 +10,10 @@ import Foundation
 import Firebase
 
 class ArtemisDAO {
+    var reference: DatabaseReference!
     
-    func autenticar(_ email:String, _ senha:String, _ view:UIViewController, _ tipo:String){
+    func autenticar(_ email:String, _ senha:String, _ view:UIViewController){
         
-        if tipo == "login"{
             Auth.auth().signIn(withEmail: email, password: senha) { (user, error) in
                 if error != nil {
                     let alertController = UIAlertController(title: "Artemis", message:
@@ -28,21 +28,29 @@ class ArtemisDAO {
                     print("Logado com sucesso")
                 }
             }
-        }
-       
-        if tipo == "cadastrar" {
-            Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
-                if let user = resultado?.user{
-                    view.navigationController?.popViewController(animated: true)
-                }
-                else{
-                    print(erro)
-                return
-                }
-            }
-        }
 }
     
- 
+    func cadastrar(_ email:String, _ senha:String, _ view:UIViewController, _ nome:String, _ telefone:String){
+        reference = Database.database().reference()
+        Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
+            if let user = resultado?.user{
+                resultado?.user.createProfileChangeRequest().displayName = nome
+                let newUser = ["uid": user.uid,
+                               "nome": nome,
+                               "telefone": telefone
+                              ]
+                
+                self.reference.child("usuarios").child(user.uid).setValue(newUser)
+                view.performSegue(withIdentifier: "cancelarSegue", sender: nil)
+            }
+            else{
+                print("error")
+                return
+            }
+        }
+    }
     
+    func carregarPerfil(){
+        
+    }
 }

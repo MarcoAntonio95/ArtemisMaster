@@ -18,6 +18,16 @@
 		13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */; };
 		13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */; };
 		13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */; };
+		13D73F5B225BF9690063C676 /* ic_phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F5A225BF9690063C676 /* ic_phone.png */; };
+		13D73F5F225BFC760063C676 /* ic_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F5C225BFC750063C676 /* ic_cross.png */; };
+		13D73F60225BFC760063C676 /* ic_hospital.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F5D225BFC750063C676 /* ic_hospital.png */; };
+		13D73F61225BFC760063C676 /* ic_profileFX.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F5E225BFC760063C676 /* ic_profileFX.png */; };
+		13D73F63225C09630063C676 /* cadastrarLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F62225C095E0063C676 /* cadastrarLogo.png */; };
+		13D73F67225C0B830063C676 /* ic_name.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F64225C0B820063C676 /* ic_name.png */; };
+		13D73F68225C0B830063C676 /* ic_pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F65225C0B820063C676 /* ic_pass.png */; };
+		13D73F69225C0B830063C676 /* ic_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F66225C0B830063C676 /* ic_email.png */; };
+		13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F6A225C0D4B0063C676 /* ic_profile copy.png */; };
+		13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D73F6C225C22940063C676 /* PerfilViewController.swift */; };
 		3EEC0AA48B4648FC2CA1717B /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3905F808693975D4572F3B /* Pods_Artemis.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +46,16 @@
 		13CA37C42255729F006BF2C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"; sourceTree = "<group>"; };
+		13D73F5A225BF9690063C676 /* ic_phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_phone.png; sourceTree = "<group>"; };
+		13D73F5C225BFC750063C676 /* ic_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cross.png; sourceTree = "<group>"; };
+		13D73F5D225BFC750063C676 /* ic_hospital.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_hospital.png; sourceTree = "<group>"; };
+		13D73F5E225BFC760063C676 /* ic_profileFX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_profileFX.png; sourceTree = "<group>"; };
+		13D73F62225C095E0063C676 /* cadastrarLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cadastrarLogo.png; sourceTree = "<group>"; };
+		13D73F64225C0B820063C676 /* ic_name.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_name.png; sourceTree = "<group>"; };
+		13D73F65225C0B820063C676 /* ic_pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_pass.png; sourceTree = "<group>"; };
+		13D73F66225C0B830063C676 /* ic_email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_email.png; sourceTree = "<group>"; };
+		13D73F6A225C0D4B0063C676 /* ic_profile copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile copy.png"; sourceTree = "<group>"; };
+		13D73F6C225C22940063C676 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.release.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.release.xcconfig"; sourceTree = "<group>"; };
 		CD3905F808693975D4572F3B /* Pods_Artemis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +103,7 @@
 				13CA37C42255729F006BF2C6 /* Info.plist */,
 				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
 				133BDB372258160700AA0B29 /* ArtemisDAO.swift */,
+				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
 			);
 			path = Artemis;
 			sourceTree = "<group>";
@@ -90,6 +111,15 @@
 		13CA37CC2255805E006BF2C6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				13D73F5C225BFC750063C676 /* ic_cross.png */,
+				13D73F5D225BFC750063C676 /* ic_hospital.png */,
+				13D73F5E225BFC760063C676 /* ic_profileFX.png */,
+				13D73F66225C0B830063C676 /* ic_email.png */,
+				13D73F6A225C0D4B0063C676 /* ic_profile copy.png */,
+				13D73F64225C0B820063C676 /* ic_name.png */,
+				13D73F65225C0B820063C676 /* ic_pass.png */,
+				13D73F62225C095E0063C676 /* cadastrarLogo.png */,
+				13D73F5A225BF9690063C676 /* ic_phone.png */,
 				13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */,
 				133BDB33225809FD00AA0B29 /* logoTIPObeta.png */,
 				133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */,
@@ -175,12 +205,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */,
+				13D73F61225BFC760063C676 /* ic_profileFX.png in Resources */,
 				133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */,
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
+				13D73F67225C0B830063C676 /* ic_name.png in Resources */,
 				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
+				13D73F5B225BF9690063C676 /* ic_phone.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
+				13D73F60225BFC760063C676 /* ic_hospital.png in Resources */,
+				13D73F68225C0B830063C676 /* ic_pass.png in Resources */,
 				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
+				13D73F63225C09630063C676 /* cadastrarLogo.png in Resources */,
+				13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */,
+				13D73F69225C0B830063C676 /* ic_email.png in Resources */,
+				13D73F5F225BFC760063C676 /* ic_cross.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +287,7 @@
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,
 				133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */,
 				13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */,
+				13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

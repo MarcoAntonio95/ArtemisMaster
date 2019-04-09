@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true, completion: nil)
         } else{
-            artemisDao.autenticar(email!, senha!, self, "login")
+            artemisDao.autenticar(email!, senha!, self)
         }
     }
     

@@ -14,9 +14,13 @@ class CadastrarViewController: UIViewController {
     @IBOutlet weak var nomeTF: UITextField!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var senhaTF: UITextField!
+    @IBOutlet weak var telefoneTF:UITextField!
     var email:String?
     var senha:String?
     var uid:String?
+    var nome:String?
+    var telefone:String?
+    
     var artemisDAO = ArtemisDAO()
     
     override func viewDidLoad() {
@@ -26,14 +30,16 @@ class CadastrarViewController: UIViewController {
     @IBAction func Cadastrar(_ sender: Any) {
         email = emailTF.text!
         senha = senhaTF.text!
+        nome = nomeTF.text!
+        telefone = telefoneTF.text!
         
-        if(email == "" && senha == ""){
+        if(email == "" && senha == "" && nome == "" && telefone == ""){
             let alertController = UIAlertController(title: "Artemis", message:
                 "Preencha todos os campos", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true, completion: nil)
         }else{
-            artemisDAO.autenticar(email!, senha!, self, "cadastrar")
+            artemisDAO.cadastrar(email!, senha!, self, nome!, telefone!)
         }
     }
     
