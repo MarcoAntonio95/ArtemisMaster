@@ -35,8 +35,10 @@ class ArtemisDAO {
         Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
             if let user = resultado?.user{
                 resultado?.user.createProfileChangeRequest().displayName = nome
+                
                 let newUser = ["uid": user.uid,
                                "nome": nome,
+                               "email": email,
                                "telefone": telefone
                               ]
                 
@@ -51,6 +53,47 @@ class ArtemisDAO {
     }
     
     func carregarPerfil(){
+        let userID = Auth.auth().currentUser?.uid
+           reference = Database.database().reference()
+        if(userID != nil){
+            print(userID!)
+            reference.child("usuarios").child(userID!).observe(.value, with: { snapshot in
+                let value = snapshot.value as? NSDictionary
+                let nome = value?["nome"] as? String ?? ""
+                let email = value?["email"] as? String ?? ""
+                
+            })
+                
+        
+        }
         
     }
+    
+    func carregarEmergencias(){
+        reference = Database.database().reference()
+        var emergencias:[Hospital] = []
+        
+            reference.child("emergencias").observe(.value, with: { snapshot in
+                for _ in snapshot.children{
+                    let value = snapshot.value as? NSDictionary
+                    let nome = value?["nome"] as? String ?? ""
+                    let rua = value?["rua"] as? String ?? ""
+                    let bairro = value?["bairro"] as? String ?? ""
+                    let numero = value?["numero"] as? String ?? ""
+                    let cidade = value?["cidade"] as? String ?? ""
+                    let estado = value?["estado"] as? String ?? ""
+                    let cep = value?["cep"] as? String ?? ""
+                    let emergenciaAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep)
+                    
+                    emergencias.append(emergenciaAux)
+                }
+             
+                
+            })
+            
+            print(emergencias.count)
+        }
+    
+
 }
+

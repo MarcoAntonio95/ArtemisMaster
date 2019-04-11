@@ -9,11 +9,12 @@
 import UIKit
 
 class PerfilViewController: UIViewController {
-
+    var artemisDAO = ArtemisDAO()
     @IBOutlet weak var nomeLB: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        artemisDAO.carregarPerfil()
+        artemisDAO.carregarEmergencias()
         // Do any additional setup after loading the view.
     }
     

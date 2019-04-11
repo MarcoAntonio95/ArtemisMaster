@@ -12,6 +12,9 @@
 		133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB33225809FD00AA0B29 /* logoTIPObeta.png */; };
 		133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */; };
 		133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB372258160700AA0B29 /* ArtemisDAO.swift */; };
+		1390CF86225EAEC100DA8658 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390CF85225EAEC100DA8658 /* User.swift */; };
+		1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */ = {isa = PBXBuildFile; fileRef = 1390CF87225EB9B500DA8658 /* ic_favLocations.png */; };
+		1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390CF89225EBFDA00DA8658 /* Hospital.swift */; };
 		13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA37B82255729E006BF2C6 /* AppDelegate.swift */; };
 		13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CA37BA2255729E006BF2C6 /* ViewController.swift */; };
 		13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13CA37BC2255729E006BF2C6 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 		133BDB33225809FD00AA0B29 /* logoTIPObeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTIPObeta.png; sourceTree = "<group>"; };
 		133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		133BDB372258160700AA0B29 /* ArtemisDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisDAO.swift; sourceTree = "<group>"; };
+		1390CF85225EAEC100DA8658 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1390CF87225EB9B500DA8658 /* ic_favLocations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_favLocations.png; sourceTree = "<group>"; };
+		1390CF89225EBFDA00DA8658 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		13CA37B52255729E006BF2C6 /* Artemis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Artemis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13CA37B82255729E006BF2C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13CA37BA2255729E006BF2C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +78,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1390CF72225EA9E900DA8658 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				133BDB372258160700AA0B29 /* ArtemisDAO.swift */,
+				1390CF85225EAEC100DA8658 /* User.swift */,
+				1390CF89225EBFDA00DA8658 /* Hospital.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1390CF73225EA9F800DA8658 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13CA37BC2255729E006BF2C6 /* Main.storyboard */,
+				133BDB2F2258077300AA0B29 /* Assets.xcassets */,
+				13CA37CC2255805E006BF2C6 /* Assets */,
+				13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1390CF74225EA9FF00DA8658 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
+				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
+				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
+				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		13CA37AC2255729E006BF2C6 = {
 			isa = PBXGroup;
 			children = (
@@ -93,17 +131,11 @@
 		13CA37B72255729E006BF2C6 /* Artemis */ = {
 			isa = PBXGroup;
 			children = (
-				13CA37CC2255805E006BF2C6 /* Assets */,
+				1390CF74225EA9FF00DA8658 /* Controller */,
+				1390CF73225EA9F800DA8658 /* View */,
+				1390CF72225EA9E900DA8658 /* Model */,
 				13CA37CA22557FD3006BF2C6 /* GoogleService-Info.plist */,
-				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
-				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
-				13CA37BC2255729E006BF2C6 /* Main.storyboard */,
-				133BDB2F2258077300AA0B29 /* Assets.xcassets */,
-				13CA37C12255729F006BF2C6 /* LaunchScreen.storyboard */,
 				13CA37C42255729F006BF2C6 /* Info.plist */,
-				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
-				133BDB372258160700AA0B29 /* ArtemisDAO.swift */,
-				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
 			);
 			path = Artemis;
 			sourceTree = "<group>";
@@ -111,6 +143,7 @@
 		13CA37CC2255805E006BF2C6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1390CF87225EB9B500DA8658 /* ic_favLocations.png */,
 				13D73F5C225BFC750063C676 /* ic_cross.png */,
 				13D73F5D225BFC750063C676 /* ic_hospital.png */,
 				13D73F5E225BFC760063C676 /* ic_profileFX.png */,
@@ -213,6 +246,7 @@
 				13D73F5B225BF9690063C676 /* ic_phone.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
+				1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */,
 				13D73F60225BFC760063C676 /* ic_hospital.png in Resources */,
 				13D73F68225C0B830063C676 /* ic_pass.png in Resources */,
 				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
@@ -283,8 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */,
 				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,
+				1390CF86225EAEC100DA8658 /* User.swift in Sources */,
 				133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */,
 				13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */,
 				13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */,
