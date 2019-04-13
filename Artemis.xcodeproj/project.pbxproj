@@ -12,6 +12,13 @@
 		133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB33225809FD00AA0B29 /* logoTIPObeta.png */; };
 		133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */; };
 		133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB372258160700AA0B29 /* ArtemisDAO.swift */; };
+		1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */; };
+		1375B81D226148D300A1958D /* ic_cadPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B81B226148D000A1958D /* ic_cadPerson.png */; };
+		1375B81E226148D300A1958D /* ic_cadHosp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B81C226148D200A1958D /* ic_cadHosp.png */; };
+		1375B820226152C200A1958D /* ic_cpf.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B81F226152C100A1958D /* ic_cpf.png */; };
+		1375B8222261532200A1958D /* ic_cpfdoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B8212261532200A1958D /* ic_cpfdoc.png */; };
+		1375B8242261558200A1958D /* oubackup.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B8232261558100A1958D /* oubackup.png */; };
+		1375B8262261622600A1958D /* attempt1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1375B8252261622600A1958D /* attempt1.jpg */; };
 		1390CF86225EAEC100DA8658 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390CF85225EAEC100DA8658 /* User.swift */; };
 		1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */ = {isa = PBXBuildFile; fileRef = 1390CF87225EB9B500DA8658 /* ic_favLocations.png */; };
 		1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1390CF89225EBFDA00DA8658 /* Hospital.swift */; };
@@ -41,6 +48,13 @@
 		133BDB33225809FD00AA0B29 /* logoTIPObeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTIPObeta.png; sourceTree = "<group>"; };
 		133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		133BDB372258160700AA0B29 /* ArtemisDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisDAO.swift; sourceTree = "<group>"; };
+		1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarHospitalViewController.swift; sourceTree = "<group>"; };
+		1375B81B226148D000A1958D /* ic_cadPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cadPerson.png; sourceTree = "<group>"; };
+		1375B81C226148D200A1958D /* ic_cadHosp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cadHosp.png; sourceTree = "<group>"; };
+		1375B81F226152C100A1958D /* ic_cpf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cpf.png; sourceTree = "<group>"; };
+		1375B8212261532200A1958D /* ic_cpfdoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cpfdoc.png; sourceTree = "<group>"; };
+		1375B8232261558100A1958D /* oubackup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oubackup.png; sourceTree = "<group>"; };
+		1375B8252261622600A1958D /* attempt1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = attempt1.jpg; sourceTree = "<group>"; };
 		1390CF85225EAEC100DA8658 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1390CF87225EB9B500DA8658 /* ic_favLocations.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_favLocations.png; sourceTree = "<group>"; };
 		1390CF89225EBFDA00DA8658 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
@@ -106,6 +120,7 @@
 				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
 				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
+				1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +162,12 @@
 				13D73F5C225BFC750063C676 /* ic_cross.png */,
 				13D73F5D225BFC750063C676 /* ic_hospital.png */,
 				13D73F5E225BFC760063C676 /* ic_profileFX.png */,
+				1375B8252261622600A1958D /* attempt1.jpg */,
+				1375B81F226152C100A1958D /* ic_cpf.png */,
+				1375B8232261558100A1958D /* oubackup.png */,
+				1375B81C226148D200A1958D /* ic_cadHosp.png */,
+				1375B81B226148D000A1958D /* ic_cadPerson.png */,
+				1375B8212261532200A1958D /* ic_cpfdoc.png */,
 				13D73F66225C0B830063C676 /* ic_email.png */,
 				13D73F6A225C0D4B0063C676 /* ic_profile copy.png */,
 				13D73F64225C0B820063C676 /* ic_name.png */,
@@ -241,17 +262,23 @@
 				13D73F61225BFC760063C676 /* ic_profileFX.png in Resources */,
 				133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */,
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
+				1375B81E226148D300A1958D /* ic_cadHosp.png in Resources */,
+				1375B820226152C200A1958D /* ic_cpf.png in Resources */,
 				13D73F67225C0B830063C676 /* ic_name.png in Resources */,
 				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
 				13D73F5B225BF9690063C676 /* ic_phone.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
+				1375B81D226148D300A1958D /* ic_cadPerson.png in Resources */,
 				1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */,
+				1375B8262261622600A1958D /* attempt1.jpg in Resources */,
 				13D73F60225BFC760063C676 /* ic_hospital.png in Resources */,
 				13D73F68225C0B830063C676 /* ic_pass.png in Resources */,
 				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
 				13D73F63225C09630063C676 /* cadastrarLogo.png in Resources */,
+				1375B8222261532200A1958D /* ic_cpfdoc.png in Resources */,
 				13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */,
+				1375B8242261558200A1958D /* oubackup.png in Resources */,
 				13D73F69225C0B830063C676 /* ic_email.png in Resources */,
 				13D73F5F225BFC760063C676 /* ic_cross.png in Resources */,
 			);
@@ -291,6 +318,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Artemis/Pods-Artemis-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Former/Former.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -300,6 +328,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Former.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -317,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */,
 				1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */,
 				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,

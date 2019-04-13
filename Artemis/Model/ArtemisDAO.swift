@@ -52,6 +52,21 @@ class ArtemisDAO {
         }
     }
     
+    func cadastrarHospital(_ hospital:Hospital){
+        reference = Database.database().reference()
+       
+                let newUser = ["uid": user.uid,
+                               "nome": nome,
+                               "email": email,
+                               "telefone": telefone]
+                
+                
+                self.reference.child("usuarios").child(user.uid).setValue(newUser)
+                view.performSegue(withIdentifier: "cancelarSegue", sender: nil)
+        
+    }
+    
+    
     func carregarPerfil(){
         let userID = Auth.auth().currentUser?.uid
            reference = Database.database().reference()
