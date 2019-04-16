@@ -55,14 +55,14 @@ class ArtemisDAO {
     func cadastrarHospital(_ hospital:Hospital){
         reference = Database.database().reference()
        
-                let newUser = ["uid": user.uid,
-                               "nome": nome,
-                               "email": email,
-                               "telefone": telefone]
-                
-                
-                self.reference.child("usuarios").child(user.uid).setValue(newUser)
-                view.performSegue(withIdentifier: "cancelarSegue", sender: nil)
+//                let newUser = ["uid": user.uid,
+//                               "nome": nome,
+//                               "email": email,
+//                               "telefone": telefone]
+//
+//
+//                self.reference.child("usuarios").child(user.uid).setValue(newUser)
+//                view.performSegue(withIdentifier: "cancelarSegue", sender: nil)
         
     }
     
@@ -98,7 +98,10 @@ class ArtemisDAO {
                     let cidade = value?["cidade"] as? String ?? ""
                     let estado = value?["estado"] as? String ?? ""
                     let cep = value?["cep"] as? String ?? ""
-                    let emergenciaAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep)
+                    let emergencia = value?["emergencia"] as? String ?? ""
+                    let busca = value?["busca"] as? String ?? ""
+                    
+                    let emergenciaAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep,emergencia,busca)
                     
                     emergencias.append(emergenciaAux)
                 }

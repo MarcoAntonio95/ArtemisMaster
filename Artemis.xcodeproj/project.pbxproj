@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133173342265352E0020A87B /* ic_locationSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173322265352B0020A87B /* ic_locationSearch.png */; };
+		133173352265352E0020A87B /* ic_prontuario.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173332265352D0020A87B /* ic_prontuario.png */; };
+		133173372265353D0020A87B /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173362265353C0020A87B /* ic_emergency.png */; };
+		13317339226535600020A87B /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 13317338226535600020A87B /* emergency.png */; };
+		1331733B22653ACE0020A87B /* ic_buscar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1331733A22653ACE0020A87B /* ic_buscar.png */; };
+		1331733D22653B030020A87B /* ic_buscaNav.png in Resources */ = {isa = PBXBuildFile; fileRef = 1331733C22653B020020A87B /* ic_buscaNav.png */; };
 		133BDB302258077300AA0B29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB2F2258077300AA0B29 /* Assets.xcassets */; };
 		133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */; };
 		133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB33225809FD00AA0B29 /* logoTIPObeta.png */; };
 		133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */; };
 		133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB372258160700AA0B29 /* ArtemisDAO.swift */; };
+		136F5AF0226549A3009A22AE /* ic_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AEF226549A3009A22AE /* ic_calendar.png */; };
+		136F5AF222654ADB009A22AE /* ic_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF122654AD7009A22AE /* ic_dog.png */; };
+		136F5AF422654C1D009A22AE /* ic_esteto.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF322654C19009A22AE /* ic_esteto.png */; };
+		136F5AF622654D0B009A22AE /* ic_prancheta.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF522654D07009A22AE /* ic_prancheta.png */; };
+		136F5AF8226554EF009A22AE /* ic_maps.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF7226554EB009A22AE /* ic_maps.png */; };
 		1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */; };
 		1375B81D226148D300A1958D /* ic_cadPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B81B226148D000A1958D /* ic_cadPerson.png */; };
 		1375B81E226148D300A1958D /* ic_cadHosp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1375B81C226148D200A1958D /* ic_cadHosp.png */; };
@@ -43,11 +54,22 @@
 
 /* Begin PBXFileReference section */
 		0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
+		133173322265352B0020A87B /* ic_locationSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_locationSearch.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_locationSearch.png"; sourceTree = "<group>"; };
+		133173332265352D0020A87B /* ic_prontuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_prontuario.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_prontuario.png"; sourceTree = "<group>"; };
+		133173362265353C0020A87B /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_emergency.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_emergency.png"; sourceTree = "<group>"; };
+		13317338226535600020A87B /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emergency.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/emergency.png"; sourceTree = "<group>"; };
+		1331733A22653ACE0020A87B /* ic_buscar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_buscar.png; sourceTree = "<group>"; };
+		1331733C22653B020020A87B /* ic_buscaNav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_buscaNav.png; sourceTree = "<group>"; };
 		133BDB2F2258077300AA0B29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artemisIconALLinONE.png; sourceTree = "<group>"; };
 		133BDB33225809FD00AA0B29 /* logoTIPObeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTIPObeta.png; sourceTree = "<group>"; };
 		133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		133BDB372258160700AA0B29 /* ArtemisDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisDAO.swift; sourceTree = "<group>"; };
+		136F5AEF226549A3009A22AE /* ic_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_calendar.png; sourceTree = "<group>"; };
+		136F5AF122654AD7009A22AE /* ic_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_dog.png; sourceTree = "<group>"; };
+		136F5AF322654C19009A22AE /* ic_esteto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_esteto.png; sourceTree = "<group>"; };
+		136F5AF522654D07009A22AE /* ic_prancheta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_prancheta.png; sourceTree = "<group>"; };
+		136F5AF7226554EB009A22AE /* ic_maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_maps.png; sourceTree = "<group>"; };
 		1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarHospitalViewController.swift; sourceTree = "<group>"; };
 		1375B81B226148D000A1958D /* ic_cadPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cadPerson.png; sourceTree = "<group>"; };
 		1375B81C226148D200A1958D /* ic_cadHosp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_cadHosp.png; sourceTree = "<group>"; };
@@ -165,13 +187,24 @@
 				1375B8252261622600A1958D /* attempt1.jpg */,
 				1375B81F226152C100A1958D /* ic_cpf.png */,
 				1375B8232261558100A1958D /* oubackup.png */,
+				136F5AEF226549A3009A22AE /* ic_calendar.png */,
 				1375B81C226148D200A1958D /* ic_cadHosp.png */,
+				136F5AF322654C19009A22AE /* ic_esteto.png */,
 				1375B81B226148D000A1958D /* ic_cadPerson.png */,
 				1375B8212261532200A1958D /* ic_cpfdoc.png */,
+				133173362265353C0020A87B /* ic_emergency.png */,
 				13D73F66225C0B830063C676 /* ic_email.png */,
 				13D73F6A225C0D4B0063C676 /* ic_profile copy.png */,
+				1331733C22653B020020A87B /* ic_buscaNav.png */,
 				13D73F64225C0B820063C676 /* ic_name.png */,
+				136F5AF122654AD7009A22AE /* ic_dog.png */,
 				13D73F65225C0B820063C676 /* ic_pass.png */,
+				1331733A22653ACE0020A87B /* ic_buscar.png */,
+				133173322265352B0020A87B /* ic_locationSearch.png */,
+				13317338226535600020A87B /* emergency.png */,
+				133173332265352D0020A87B /* ic_prontuario.png */,
+				136F5AF522654D07009A22AE /* ic_prancheta.png */,
+				136F5AF7226554EB009A22AE /* ic_maps.png */,
 				13D73F62225C095E0063C676 /* cadastrarLogo.png */,
 				13D73F5A225BF9690063C676 /* ic_phone.png */,
 				13CA37CD2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png */,
@@ -261,26 +294,37 @@
 				133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */,
 				13D73F61225BFC760063C676 /* ic_profileFX.png in Resources */,
 				133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */,
+				133173372265353D0020A87B /* ic_emergency.png in Resources */,
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
 				1375B81E226148D300A1958D /* ic_cadHosp.png in Resources */,
+				1331733D22653B030020A87B /* ic_buscaNav.png in Resources */,
 				1375B820226152C200A1958D /* ic_cpf.png in Resources */,
 				13D73F67225C0B830063C676 /* ic_name.png in Resources */,
 				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
 				13D73F5B225BF9690063C676 /* ic_phone.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
+				133173342265352E0020A87B /* ic_locationSearch.png in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
 				1375B81D226148D300A1958D /* ic_cadPerson.png in Resources */,
 				1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */,
 				1375B8262261622600A1958D /* attempt1.jpg in Resources */,
+				136F5AF0226549A3009A22AE /* ic_calendar.png in Resources */,
+				13317339226535600020A87B /* emergency.png in Resources */,
+				133173352265352E0020A87B /* ic_prontuario.png in Resources */,
 				13D73F60225BFC760063C676 /* ic_hospital.png in Resources */,
+				1331733B22653ACE0020A87B /* ic_buscar.png in Resources */,
 				13D73F68225C0B830063C676 /* ic_pass.png in Resources */,
 				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
 				13D73F63225C09630063C676 /* cadastrarLogo.png in Resources */,
 				1375B8222261532200A1958D /* ic_cpfdoc.png in Resources */,
+				136F5AF8226554EF009A22AE /* ic_maps.png in Resources */,
+				136F5AF222654ADB009A22AE /* ic_dog.png in Resources */,
 				13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */,
 				1375B8242261558200A1958D /* oubackup.png in Resources */,
 				13D73F69225C0B830063C676 /* ic_email.png in Resources */,
+				136F5AF622654D0B009A22AE /* ic_prancheta.png in Resources */,
 				13D73F5F225BFC760063C676 /* ic_cross.png in Resources */,
+				136F5AF422654C1D009A22AE /* ic_esteto.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
