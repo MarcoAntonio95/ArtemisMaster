@@ -18,8 +18,9 @@ class Hospital {
     var cep:String?
     var emergencia:String?
     var busca:String?
+    var responsavel:String?
     
-    init(_ nome:String, _ rua:String, _ bairro:String,_ numero:String,_ cidade:String,_ estado:String, _ cep:String, _ emergencia:String, _ busca:String) {
+    init(_ nome:String, _ rua:String, _ bairro:String,_ numero:String,_ cidade:String,_ estado:String, _ cep:String,_ responsavel:String, _ emergencia:String, _ busca:String) {
         self.nome = nome
         self.rua = rua
         self.bairro = bairro
@@ -27,6 +28,7 @@ class Hospital {
         self.cidade = cidade
         self.estado = estado
         self.cep = cep
+        self.responsavel = responsavel
         self.emergencia = emergencia
         self.busca = busca
     }

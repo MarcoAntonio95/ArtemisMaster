@@ -22,8 +22,14 @@ class CadastrarHospitalViewController: UIViewController {
     @IBOutlet weak var cepTF: UITextField!
     @IBOutlet weak var ruaTF: UITextField!
     
+    @IBOutlet weak var senhaTF: UITextField!
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var imageIV: UIImageView!
     @IBOutlet weak var emergenciaSW: UISwitch!
     var artemisDAO = ArtemisDAO()
+    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +38,8 @@ class CadastrarHospitalViewController: UIViewController {
     
 
     @IBAction func cadastrar(_ sender: Any) {
+        var email:String = emailTF.text!
+        var senha:String = senhaTF.text!
         var nome:String = nomeTF.text!
         var responsavel:String = responsavelTF.text!
         var estado:String = estadoTF.text!
@@ -41,25 +49,31 @@ class CadastrarHospitalViewController: UIViewController {
         var rua:String = ruaTF.text!
         var cep:String = cepTF.text!
         var emergencia = ""
-        
         if(emergenciaSW.isOn){
             emergencia = "Sim"
+        }else{
+            emergencia = "Nao"
         }
-        
-        if(nome != "" && responsavel != "" && estado != "" && cidade != ""
+    
+        if(email != "" && senha != "" && nome != "" && responsavel != "" && estado != "" && cidade != ""
             && bairro != "" && numero != "" && rua != "" && cep != "" && emergencia != ""){
             var endereco:String?
-            endereco = "\(rua), \(numero) - \(bairro), \(cidade) - \(estado), \(cep)"
-            let hospital = Hospital(nome, rua, bairro, numero, cidade, estado, cep, emergencia, endereco!)
-            artemisDAO.cadastrarHospital(hospital)
+            endereco = "\(nome)%\(rua), \(numero) - \(bairro), \(cidade) - \(estado), \(cep)"
+            let hospital = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel, emergencia, endereco!)
+            artemisDAO.cadastrarHospital(email,senha,hospital,self)
             
+        } else{
+            let alertController = UIAlertController(title: "Artemis", message:
+                "Preencha todos os campos", preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+            self.present(alertController, animated: true, completion: nil)
         }
         
-    
-        
-        
-        
     }
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

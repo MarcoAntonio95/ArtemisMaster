@@ -39,7 +39,7 @@ class CadastrarViewController: UIViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
             self.present(alertController, animated: true, completion: nil)
         }else{
-            artemisDAO.cadastrar(email!, senha!, self, nome!, telefone!)
+            artemisDAO.cadastrar(email!, senha!, self, nome!, telefone!,"Paciente")
         }
     }
     
