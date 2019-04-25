@@ -11,6 +11,9 @@ import Firebase
 
 class ArtemisDAO {
     var reference: DatabaseReference!
+    static var emergencias:[Hospital] = []
+    var hospitais:[Hospital] = []
+    
     
     func autenticar(_ email:String, _ senha:String, _ view:UIViewController){
            reference = Database.database().reference()
@@ -86,6 +89,7 @@ class ArtemisDAO {
                                "cidade": hospital.cidade,
                                "bairro": hospital.bairro,
                                "cep": hospital.cep,
+                               "rua": hospital.rua,
                                "emergencia": hospital.emergencia,
                                "busca": hospital.busca,
                                "responsavel": hospital.responsavel
@@ -120,33 +124,37 @@ class ArtemisDAO {
         
     }
     
-    func carregarEmergencias() -> [Hospital]{
+    func carregarHospitais(){
         reference = Database.database().reference()
-        var emergencias:[Hospital] = []
         
-            reference.child("hospitais").queryOrdered(byChild: "emergencia").queryEqual(toValue: "Sim").observe(.value, with: { snapshot in
-                for _ in snapshot.children{
-                    let value = snapshot.value as? NSDictionary
-                    let nome = value?["nome"] as? String ?? ""
-                    let rua = value?["rua"] as? String ?? ""
-                    let bairro = value?["bairro"] as? String ?? ""
-                    let numero = value?["numero"] as? String ?? ""
-                    let cidade = value?["cidade"] as? String ?? ""
-                    let estado = value?["estado"] as? String ?? ""
-                    let cep = value?["cep"] as? String ?? ""
-                    let emergencia = value?["emergencia"] as? String ?? ""
-                    let busca = value?["busca"] as? String ?? ""
-                    let responsavel = value?["responsavel"] as? String ?? ""
-                    let emergenciaAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel,emergencia,busca)
-                    
-                    emergencias.append(emergenciaAux)
+        reference.child("hospitais").observe(.value) { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let hosp = snap.value as! [String: Any]
+                let nome = hosp["nome"] as! String
+                let bairro = hosp["bairro"] as! String
+                let rua = hosp["rua"] as! String
+                let numero = hosp["numero"] as! String
+                let cidade = hosp["cidade"] as! String
+                let estado = hosp["estado"] as! String
+                let cep = hosp["cep"] as! String
+                let emergencia = hosp["emergencia"] as! String
+                let busca = hosp["busca"] as! String
+                let responsavel = hosp["responsavel"] as! String
+                let hospitalAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel,emergencia,busca)
+                
+                if hospitalAux.emergencia == "Sim"{
+                  ArtemisDAO.emergencias.append(hospitalAux)
+//        
+                } else{
+                    self.hospitais.append(hospitalAux)
                 }
-            })
-        
-            print(emergencias.count)
-        return emergencias
+              
+            }
+          
         }
-    
+ 
+    }
 
 }
 

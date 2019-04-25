@@ -14,8 +14,10 @@ class PerfilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         artemisDAO.carregarPerfil()
-        artemisDAO.carregarEmergencias()
-        // Do any additional setup after loading the view.
+        
+ 
+        print("perf \(artemisDAO.hospitais.count)")
+           print("static \(ArtemisDAO.emergencias.count)")
     }
     
 

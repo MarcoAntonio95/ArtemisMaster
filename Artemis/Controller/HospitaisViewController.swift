@@ -16,14 +16,17 @@ class HospitaisViewController: UIViewController {
     var local:String?
     let lm = CLLocationManager()
     let artemisDAO = ArtemisDAO()
-    var hospitais:[Hospital] = []
+    var emergencias:[Hospital] = []
+    
+    override func viewDidLoad() {
+    artemisDAO.carregarHospitais()
+ 
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
-        hospitais = artemisDAO.carregarEmergencias()
-        print(hospitais.count)
-        for hosp in hospitais{
-            print(hosp.nome)
-        }
+    }
         
+//
 //        lm.desiredAccuracy = kCLLocationAccuracyHundredMeters
 //        lm.requestWhenInUseAuthorization()
 //        UIApplication.shared.beginIgnoringInteractionEvents()
@@ -76,6 +79,6 @@ class HospitaisViewController: UIViewController {
 //        }
 //
 //
-//
-   }
+
+   
 }
