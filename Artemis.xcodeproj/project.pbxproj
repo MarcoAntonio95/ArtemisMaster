@@ -47,6 +47,7 @@
 		13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F6A225C0D4B0063C676 /* ic_profile copy.png */; };
 		13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D73F6C225C22940063C676 /* PerfilViewController.swift */; };
 		3EEC0AA48B4648FC2CA1717B /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3905F808693975D4572F3B /* Pods_Artemis.framework */; };
+		5740FC8E227CD45D0091EC82 /* CadastrarMedicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5740FC8D227CD45D0091EC82 /* CadastrarMedicoViewController.swift */; };
 		57F10157227CB59700054D4E /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10153227CB59700054D4E /* emergency.png */; };
 		57F10158227CB59700054D4E /* ic_locationSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10154227CB59700054D4E /* ic_locationSearch.png */; };
 		57F10159227CB59700054D4E /* ic_prontuario.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10155227CB59700054D4E /* ic_prontuario.png */; };
@@ -100,6 +101,7 @@
 		13D73F6A225C0D4B0063C676 /* ic_profile copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile copy.png"; sourceTree = "<group>"; };
 		13D73F6C225C22940063C676 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.release.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.release.xcconfig"; sourceTree = "<group>"; };
+		5740FC8D227CD45D0091EC82 /* CadastrarMedicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarMedicoViewController.swift; sourceTree = "<group>"; };
 		57F10153227CB59700054D4E /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency.png; sourceTree = "<group>"; };
 		57F10154227CB59700054D4E /* ic_locationSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_locationSearch.png; sourceTree = "<group>"; };
 		57F10155227CB59700054D4E /* ic_prontuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_prontuario.png; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
 				1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */,
 				13384667226E956E00C93AAC /* HospitaisViewController.swift */,
+				5740FC8D227CD45D0091EC82 /* CadastrarMedicoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				13384668226E956E00C93AAC /* HospitaisViewController.swift in Sources */,
 				1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */,
 				57F1015E227CC2A100054D4E /* Consulta.swift in Sources */,
+				5740FC8E227CD45D0091EC82 /* CadastrarMedicoViewController.swift in Sources */,
 				1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */,
 				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
 				57F1015C227CC23200054D4E /* Medico.swift in Sources */,

@@ -503,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="-2204" y="-339.58020989505252"/>
         </scene>
-        <!--View Controller-->
+        <!--Cadastrar Medico View Controller-->
         <scene sceneID="bnV-O0-uSz">
             <objects>
-                <viewController id="wTR-NK-R3c" sceneMemberID="viewController">
+                <viewController id="wTR-NK-R3c" customClass="CadastrarMedicoViewController" customModule="Artemis" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2on-xU-f2S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -527,7 +527,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CPF:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y97-sj-9Se">
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu CRVM:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y97-sj-9Se">
                                         <rect key="frame" x="63" y="235" width="291" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="tintColor" red="0.14901960780000001" green="0.55294117649999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -612,8 +612,13 @@
                                         </state>
                                         <connections>
                                             <action selector="Cadastrar:" destination="6aN-p9-iuP" eventType="touchUpInside" id="9ks-es-6ne"/>
+                                            <action selector="cadastrarMedico:" destination="wTR-NK-R3c" eventType="touchUpInside" id="0gQ-nj-Z97"/>
                                         </connections>
                                     </button>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j6G-rF-p9l">
+                                        <rect key="frame" x="63" y="315" width="291" height="42"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </pickerView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -621,6 +626,14 @@
                         <color key="backgroundColor" red="0.6588235294" green="0.86666666670000003" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6of-8Q-DMa"/>
                     </view>
+                    <connections>
+                        <outlet property="crvmLB" destination="y97-sj-9Se" id="41H-0M-HXb"/>
+                        <outlet property="emailLB" destination="Hrw-jX-KJh" id="S3F-rh-MR0"/>
+                        <outlet property="especPV" destination="j6G-rF-p9l" id="h3w-8B-dbv"/>
+                        <outlet property="nomeLB" destination="3ab-hn-upX" id="2Dw-Z3-5U8"/>
+                        <outlet property="senhaLB" destination="AAz-t3-Fcu" id="xpy-PO-nID"/>
+                        <outlet property="telefoneLB" destination="D3G-fm-PoP" id="qwQ-Z6-3JO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FWy-zx-cXM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

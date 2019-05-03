@@ -15,7 +15,8 @@ class ArtemisDAO {
     var hospitais:[Hospital] = []
     static var usuarioAtual:User?
     static var hospitalAtual:Hospital?
-    
+    static var especialidadesVeterinarias:[String] = ["Acupuntura","Cardiologia","Clinica Geral","Dermatologia","Homeopatia","Oncologia","Patologia"]
+        
     func autenticar(_ email:String, _ senha:String, _ view:UIViewController){
            reference = Database.database().reference()
             Auth.auth().signIn(withEmail: email, password: senha) { (user, error) in
@@ -109,6 +110,25 @@ class ArtemisDAO {
         }
     }
     
+    func cadastrarMedico(_ email:String,_ senha:String,_ medico:Medico, _ view:UIViewController){
+        reference = Database.database().reference()
+        Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
+            if let medic = resultado?.user{
+                let newMedic = [
+                    "nome": medico.nome,
+                    "especialidade": medico.especialidade,
+                    "crvm": medico.crvm,
+                    "telefone": medico.telefone,
+                ]
+                
+                self.reference.child("medicos").child(medic.uid).setValue(newMedic)
+            }
+            else{
+                print("error")
+                return
+            }
+        }
+    }
     
     func carregarPerfil(){
         let userID = Auth.auth().currentUser?.uid
