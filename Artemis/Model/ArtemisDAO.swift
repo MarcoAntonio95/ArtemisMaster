@@ -13,7 +13,8 @@ class ArtemisDAO {
     var reference: DatabaseReference!
     static var emergencias:[Hospital] = []
     var hospitais:[Hospital] = []
-    
+    static var usuarioAtual:User?
+    static var hospitalAtual:Hospital?
     
     func autenticar(_ email:String, _ senha:String, _ view:UIViewController){
            reference = Database.database().reference()
@@ -36,12 +37,14 @@ class ArtemisDAO {
                         self.reference.child("usuarios").child(id).observe(.value, with: { snapshot in
                         let value = snapshot.value as? NSDictionary
                         if value != nil{
+                        self.carregarPerfil()
                         view.performSegue(withIdentifier: "userSegue", sender: nil)
                         }})
                         
                         self.reference.child("hospitais").child(id).observe(.value, with: { snapshot in
                             let value = snapshot.value as? NSDictionary
                             if value != nil{
+                                self.carregarInstituicao()
                                 view.performSegue(withIdentifier: "hospSegue", sender: nil)
                         }})
                         
@@ -59,7 +62,7 @@ class ArtemisDAO {
         reference = Database.database().reference()
         Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
             if let user = resultado?.user{
-                resultado?.user.createProfileChangeRequest().displayName = "pac|\(nome)"
+                resultado?.user.createProfileChangeRequest().displayName = "pac\(nome)"
                 
                 let newUser = ["uid": user.uid,
                                "nome": nome,
@@ -116,13 +119,45 @@ class ArtemisDAO {
                 let value = snapshot.value as? NSDictionary
                 let nome = value?["nome"] as? String ?? ""
                 let email = value?["email"] as? String ?? ""
+                let cpf = value?["cpf"] as? String ?? ""
+                let telefone = value?["telefone"] as? String ?? ""
+                
+                ArtemisDAO.usuarioAtual = User(nome,email,telefone,cpf,userID!)
+            })
+        }
+    }
+
+    func carregarInstituicao(){
+        let userID = Auth.auth().currentUser?.uid
+        reference = Database.database().reference()
+        if(userID != nil){
+            print(userID!)
+            reference.child("hospitais").child(userID!).observe(.value, with: { snapshot in
+                let value = snapshot.value as? NSDictionary
+                let nome = value?["nome"] as? String ?? ""
+                let rua = value?["rua"] as? String ?? ""
+                let bairro = value?["bairro"] as? String ?? ""
+                let numero = value?["numero"] as? String ?? ""
+                let cidade = value?["cidade"] as? String ?? ""
+                let estado = value?["estado"] as? String ?? ""
+                let telefone = value?["telefone"] as? String ?? ""
+                let cep = value?["cep"] as? String ?? ""
+                let emergencia = value?["emergencia"] as? String ?? ""
+                let busca = value?["busca"] as? String ?? ""
+                let especialidades = value?["especialidades"] as? [String] ?? []
+                let responsavel = value?["responsavel"] as? String ?? ""
+                let medicos = value?["medicos"] as? [String] ?? []
+            
+                if especialidades != [] {
+                    ArtemisDAO.hospitalAtual = Hospital(nome,rua,bairro,numero,cidade,estado,cep,responsavel,telefone,emergencia,busca,especialidades,medicos)
+                } else{
+                     ArtemisDAO.hospitalAtual = Hospital(nome,rua,bairro,numero,cidade,estado,cep,responsavel,telefone,emergencia,busca)
+                }
                 
             })
-                
-        
         }
-        
     }
+    
     
     func carregarHospitais(){
         reference = Database.database().reference()
@@ -141,7 +176,8 @@ class ArtemisDAO {
                 let emergencia = hosp["emergencia"] as! String
                 let busca = hosp["busca"] as! String
                 let responsavel = hosp["responsavel"] as! String
-                let hospitalAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel,emergencia,busca)
+                let telefone = hosp["telefone"] as! String
+                let hospitalAux = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel,telefone,emergencia,busca)
                 
                 if hospitalAux.emergencia == "Sim"{
                   ArtemisDAO.emergencias.append(hospitalAux)

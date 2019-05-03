@@ -48,6 +48,7 @@ class CadastrarHospitalViewController: UIViewController {
         var numero:String = numeroTF.text!
         var rua:String = ruaTF.text!
         var cep:String = cepTF.text!
+        var telefone:String = ""
         var emergencia = ""
         if(emergenciaSW.isOn){
             emergencia = "Sim"
@@ -59,7 +60,7 @@ class CadastrarHospitalViewController: UIViewController {
             && bairro != "" && numero != "" && rua != "" && cep != "" && emergencia != ""){
             var endereco:String?
             endereco = "\(nome)%\(rua), \(numero) - \(bairro), \(cidade) - \(estado), \(cep)"
-            let hospital = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel, emergencia, endereco!)
+            let hospital = Hospital(nome, rua, bairro, numero, cidade, estado, cep,responsavel,telefone, emergencia, endereco!)
             artemisDAO.cadastrarHospital(email,senha,hospital,self)
             
         } else{

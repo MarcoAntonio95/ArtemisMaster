@@ -19,8 +19,12 @@ class Hospital {
     var emergencia:String?
     var busca:String?
     var responsavel:String?
+    var telefone:String?
+    var especialidades:[String]?
+    var medicos:[String]?
     
-    init(_ nome:String, _ rua:String, _ bairro:String,_ numero:String,_ cidade:String,_ estado:String, _ cep:String,_ responsavel:String, _ emergencia:String, _ busca:String) {
+    
+    init(_ nome:String, _ rua:String, _ bairro:String,_ numero:String,_ cidade:String,_ estado:String, _ cep:String,_ responsavel:String, _ telefone:String , _ emergencia:String, _ busca:String) {
         self.nome = nome
         self.rua = rua
         self.bairro = bairro
@@ -31,6 +35,21 @@ class Hospital {
         self.responsavel = responsavel
         self.emergencia = emergencia
         self.busca = busca
+    }
+    
+    init(_ nome:String, _ rua:String, _ bairro:String,_ numero:String,_ cidade:String,_ estado:String, _ cep:String,_ responsavel:String, _ telefone:String , _ emergencia:String, _ busca:String, _ especialidades:[String], _ medicos:[String]) {
+        self.nome = nome
+        self.rua = rua
+        self.bairro = bairro
+        self.numero = numero
+        self.cidade = cidade
+        self.estado = estado
+        self.cep = cep
+        self.responsavel = responsavel
+        self.emergencia = emergencia
+        self.busca = busca
+        self.especialidades = especialidades
+        self.medicos = medicos
     }
     
 }

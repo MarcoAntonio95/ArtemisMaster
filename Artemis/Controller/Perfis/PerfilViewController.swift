@@ -10,14 +10,24 @@ import UIKit
 
 class PerfilViewController: UIViewController {
     var artemisDAO = ArtemisDAO()
+    @IBOutlet weak var emailLB: UILabel!
+    @IBOutlet weak var cpfLB: UILabel!
     @IBOutlet weak var nomeLB: UILabel!
+    @IBOutlet weak var telefoneLB: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         artemisDAO.carregarPerfil()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         
- 
-        print("perf \(artemisDAO.hospitais.count)")
-           print("static \(ArtemisDAO.emergencias.count)")
+        if ArtemisDAO.usuarioAtual != nil {
+            nomeLB.text = ArtemisDAO.usuarioAtual?.nome
+            emailLB.text = ArtemisDAO.usuarioAtual?.email
+            telefoneLB.text = ArtemisDAO.usuarioAtual?.telefone
+            cpfLB.text = ArtemisDAO.usuarioAtual?.cpf
+        }
     }
     
 

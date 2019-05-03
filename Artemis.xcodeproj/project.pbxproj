@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		133173342265352E0020A87B /* ic_locationSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173322265352B0020A87B /* ic_locationSearch.png */; };
-		133173352265352E0020A87B /* ic_prontuario.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173332265352D0020A87B /* ic_prontuario.png */; };
-		133173372265353D0020A87B /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 133173362265353C0020A87B /* ic_emergency.png */; };
-		13317339226535600020A87B /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 13317338226535600020A87B /* emergency.png */; };
 		1331733B22653ACE0020A87B /* ic_buscar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1331733A22653ACE0020A87B /* ic_buscar.png */; };
 		1331733D22653B030020A87B /* ic_buscaNav.png in Resources */ = {isa = PBXBuildFile; fileRef = 1331733C22653B020020A87B /* ic_buscaNav.png */; };
 		13384668226E956E00C93AAC /* HospitaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13384667226E956E00C93AAC /* HospitaisViewController.swift */; };
@@ -51,14 +47,17 @@
 		13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 13D73F6A225C0D4B0063C676 /* ic_profile copy.png */; };
 		13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D73F6C225C22940063C676 /* PerfilViewController.swift */; };
 		3EEC0AA48B4648FC2CA1717B /* Pods_Artemis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3905F808693975D4572F3B /* Pods_Artemis.framework */; };
+		57F10157227CB59700054D4E /* emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10153227CB59700054D4E /* emergency.png */; };
+		57F10158227CB59700054D4E /* ic_locationSearch.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10154227CB59700054D4E /* ic_locationSearch.png */; };
+		57F10159227CB59700054D4E /* ic_prontuario.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10155227CB59700054D4E /* ic_prontuario.png */; };
+		57F1015A227CB59700054D4E /* ic_emergency.png in Resources */ = {isa = PBXBuildFile; fileRef = 57F10156227CB59700054D4E /* ic_emergency.png */; };
+		57F1015C227CC23200054D4E /* Medico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1015B227CC23200054D4E /* Medico.swift */; };
+		57F1015E227CC2A100054D4E /* Consulta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1015D227CC2A100054D4E /* Consulta.swift */; };
+		57F10160227CC9F500054D4E /* PerfilHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F1015F227CC9F500054D4E /* PerfilHospitalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B3A9D9D31D453975B599D00 /* Pods-Artemis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.debug.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.debug.xcconfig"; sourceTree = "<group>"; };
-		133173322265352B0020A87B /* ic_locationSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_locationSearch.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_locationSearch.png"; sourceTree = "<group>"; };
-		133173332265352D0020A87B /* ic_prontuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_prontuario.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_prontuario.png"; sourceTree = "<group>"; };
-		133173362265353C0020A87B /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_emergency.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/ic_emergency.png"; sourceTree = "<group>"; };
-		13317338226535600020A87B /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = emergency.png; path = "../../../../marco/Arquivo Comprimido/Artemis-master/Artemis/View/Assets/emergency.png"; sourceTree = "<group>"; };
 		1331733A22653ACE0020A87B /* ic_buscar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_buscar.png; sourceTree = "<group>"; };
 		1331733C22653B020020A87B /* ic_buscaNav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_buscaNav.png; sourceTree = "<group>"; };
 		13384667226E956E00C93AAC /* HospitaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitaisViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +100,13 @@
 		13D73F6A225C0D4B0063C676 /* ic_profile copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_profile copy.png"; sourceTree = "<group>"; };
 		13D73F6C225C22940063C676 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		4D4EC1D536F83EC463D9C2CF /* Pods-Artemis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artemis.release.xcconfig"; path = "Target Support Files/Pods-Artemis/Pods-Artemis.release.xcconfig"; sourceTree = "<group>"; };
+		57F10153227CB59700054D4E /* emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emergency.png; sourceTree = "<group>"; };
+		57F10154227CB59700054D4E /* ic_locationSearch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_locationSearch.png; sourceTree = "<group>"; };
+		57F10155227CB59700054D4E /* ic_prontuario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_prontuario.png; sourceTree = "<group>"; };
+		57F10156227CB59700054D4E /* ic_emergency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_emergency.png; sourceTree = "<group>"; };
+		57F1015B227CC23200054D4E /* Medico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medico.swift; sourceTree = "<group>"; };
+		57F1015D227CC2A100054D4E /* Consulta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consulta.swift; sourceTree = "<group>"; };
+		57F1015F227CC9F500054D4E /* PerfilHospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilHospitalViewController.swift; sourceTree = "<group>"; };
 		CD3905F808693975D4572F3B /* Pods_Artemis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Artemis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -122,6 +128,8 @@
 				133BDB372258160700AA0B29 /* ArtemisDAO.swift */,
 				1390CF85225EAEC100DA8658 /* User.swift */,
 				1390CF89225EBFDA00DA8658 /* Hospital.swift */,
+				57F1015B227CC23200054D4E /* Medico.swift */,
+				57F1015D227CC2A100054D4E /* Consulta.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,10 +148,10 @@
 		1390CF74225EA9FF00DA8658 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				57F10161227CCA0700054D4E /* Perfis */,
 				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
 				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
-				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
 				1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */,
 				13384667226E956E00C93AAC /* HospitaisViewController.swift */,
 			);
@@ -195,17 +203,17 @@
 				136F5AF322654C19009A22AE /* ic_esteto.png */,
 				1375B81B226148D000A1958D /* ic_cadPerson.png */,
 				1375B8212261532200A1958D /* ic_cpfdoc.png */,
-				133173362265353C0020A87B /* ic_emergency.png */,
 				13D73F66225C0B830063C676 /* ic_email.png */,
+				57F10153227CB59700054D4E /* emergency.png */,
+				57F10156227CB59700054D4E /* ic_emergency.png */,
+				57F10154227CB59700054D4E /* ic_locationSearch.png */,
+				57F10155227CB59700054D4E /* ic_prontuario.png */,
 				13D73F6A225C0D4B0063C676 /* ic_profile copy.png */,
 				1331733C22653B020020A87B /* ic_buscaNav.png */,
 				13D73F64225C0B820063C676 /* ic_name.png */,
 				136F5AF122654AD7009A22AE /* ic_dog.png */,
 				13D73F65225C0B820063C676 /* ic_pass.png */,
 				1331733A22653ACE0020A87B /* ic_buscar.png */,
-				133173322265352B0020A87B /* ic_locationSearch.png */,
-				13317338226535600020A87B /* emergency.png */,
-				133173332265352D0020A87B /* ic_prontuario.png */,
 				136F5AF522654D07009A22AE /* ic_prancheta.png */,
 				136F5AF7226554EB009A22AE /* ic_maps.png */,
 				13D73F62225C095E0063C676 /* cadastrarLogo.png */,
@@ -215,6 +223,15 @@
 				133BDB31225808BD00AA0B29 /* artemisIconALLinONE.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		57F10161227CCA0700054D4E /* Perfis */ = {
+			isa = PBXGroup;
+			children = (
+				13D73F6C225C22940063C676 /* PerfilViewController.swift */,
+				57F1015F227CC9F500054D4E /* PerfilHospitalViewController.swift */,
+			);
+			path = Perfis;
 			sourceTree = "<group>";
 		};
 		A409D45E71DED79448E1AC55 /* Frameworks */ = {
@@ -297,24 +314,23 @@
 				133BDB32225808BD00AA0B29 /* artemisIconALLinONE.png in Resources */,
 				13D73F61225BFC760063C676 /* ic_profileFX.png in Resources */,
 				133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */,
-				133173372265353D0020A87B /* ic_emergency.png in Resources */,
 				13CA37C32255729F006BF2C6 /* LaunchScreen.storyboard in Resources */,
 				1375B81E226148D300A1958D /* ic_cadHosp.png in Resources */,
 				1331733D22653B030020A87B /* ic_buscaNav.png in Resources */,
+				57F10157227CB59700054D4E /* emergency.png in Resources */,
 				1375B820226152C200A1958D /* ic_cpf.png in Resources */,
 				13D73F67225C0B830063C676 /* ic_name.png in Resources */,
 				13CA37CE2255806A006BF2C6 /* f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png in Resources */,
 				13D73F5B225BF9690063C676 /* ic_phone.png in Resources */,
 				13CA37CB22557FD3006BF2C6 /* GoogleService-Info.plist in Resources */,
-				133173342265352E0020A87B /* ic_locationSearch.png in Resources */,
 				13CA37BE2255729E006BF2C6 /* Main.storyboard in Resources */,
 				1375B81D226148D300A1958D /* ic_cadPerson.png in Resources */,
 				1390CF88225EB9B500DA8658 /* ic_favLocations.png in Resources */,
 				1375B8262261622600A1958D /* attempt1.jpg in Resources */,
 				136F5AF0226549A3009A22AE /* ic_calendar.png in Resources */,
-				13317339226535600020A87B /* emergency.png in Resources */,
-				133173352265352E0020A87B /* ic_prontuario.png in Resources */,
 				13D73F60225BFC760063C676 /* ic_hospital.png in Resources */,
+				57F10159227CB59700054D4E /* ic_prontuario.png in Resources */,
+				57F10158227CB59700054D4E /* ic_locationSearch.png in Resources */,
 				1331733B22653ACE0020A87B /* ic_buscar.png in Resources */,
 				13D73F68225C0B830063C676 /* ic_pass.png in Resources */,
 				133BDB302258077300AA0B29 /* Assets.xcassets in Resources */,
@@ -324,6 +340,7 @@
 				136F5AF222654ADB009A22AE /* ic_dog.png in Resources */,
 				13D73F6B225C0D4D0063C676 /* ic_profile copy.png in Resources */,
 				1375B8242261558200A1958D /* oubackup.png in Resources */,
+				57F1015A227CB59700054D4E /* ic_emergency.png in Resources */,
 				13D73F69225C0B830063C676 /* ic_email.png in Resources */,
 				136F5AF622654D0B009A22AE /* ic_prancheta.png in Resources */,
 				13D73F5F225BFC760063C676 /* ic_cross.png in Resources */,
@@ -395,12 +412,15 @@
 			files = (
 				13384668226E956E00C93AAC /* HospitaisViewController.swift in Sources */,
 				1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */,
+				57F1015E227CC2A100054D4E /* Consulta.swift in Sources */,
 				1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */,
 				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
+				57F1015C227CC23200054D4E /* Medico.swift in Sources */,
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,
 				1390CF86225EAEC100DA8658 /* User.swift in Sources */,
 				133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */,
 				13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */,
+				57F10160227CC9F500054D4E /* PerfilHospitalViewController.swift in Sources */,
 				13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
