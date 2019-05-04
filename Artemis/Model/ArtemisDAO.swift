@@ -15,6 +15,8 @@ class ArtemisDAO {
     var hospitais:[Hospital] = []
     static var usuarioAtual:User?
     static var hospitalAtual:Hospital?
+    static var medicoAtual:Medico?
+    static var quadroMedico:[Medico]?
     static var especialidadesVeterinarias:[String] = ["Acupuntura","Cardiologia","Clinica Geral","Dermatologia","Homeopatia","Oncologia","Patologia"]
         
     func autenticar(_ email:String, _ senha:String, _ view:UIViewController){
@@ -46,6 +48,8 @@ class ArtemisDAO {
                             let value = snapshot.value as? NSDictionary
                             if value != nil{
                                 self.carregarInstituicao()
+                                self.carregarMedicos()
+                                print("medicos \(ArtemisDAO.quadroMedico!.count)")
                                 view.performSegue(withIdentifier: "hospSegue", sender: nil)
                         }})
                         
@@ -111,17 +115,23 @@ class ArtemisDAO {
     }
     
     func cadastrarMedico(_ email:String,_ senha:String,_ medico:Medico, _ view:UIViewController){
+        let hospitalID = Auth.auth().currentUser?.uid
         reference = Database.database().reference()
         Auth.auth().createUser(withEmail: email, password: senha) { (resultado, erro) in
             if let medic = resultado?.user{
                 let newMedic = [
                     "nome": medico.nome,
                     "especialidade": medico.especialidade,
-                    "crvm": medico.crvm,
+                    "crmv": medico.crmv,
                     "telefone": medico.telefone,
+                    "hospital": hospitalID
                 ]
-                
+              
                 self.reference.child("medicos").child(medic.uid).setValue(newMedic)
+                
+                self.addMedToHospital(hospitalID!,medic.uid,medico.especialidade!)
+                
+                view.navigationController?.popViewController(animated: true)
             }
             else{
                 print("error")
@@ -129,6 +139,53 @@ class ArtemisDAO {
             }
         }
     }
+    
+    func  addMedToHospital(_ hospitalID:String,_ medicID:String, _ especialidade:String){
+        if(hospitalID != ""){
+            reference.child("hospitais").child(hospitalID).observe(.value, with: { snapshot in
+                let value = snapshot.value as? NSDictionary
+                var especialidades = value?["especialidades"] as? [String] ?? []
+                var medicos = value?["medicos"] as? [String] ?? []
+                if !especialidades.contains(especialidade) {
+                    especialidades.append(especialidade)
+                    self.reference.child("hospitais").child(hospitalID).child("especialidades").setValue(especialidades)
+                }
+                
+                if !medicos.contains(medicID) {
+                medicos.append(medicID)
+                self.reference.child("hospitais").child(hospitalID).child("medicos").setValue(medicos)
+                }
+    })
+        }
+    }
+    
+    func carregarMedicos(){
+        ArtemisDAO.quadroMedico = []
+          let hospitalID = Auth.auth().currentUser?.uid
+        reference.child("hospitais").child(hospitalID!).observe(.value, with: { snapshot in
+            let value = snapshot.value as? NSDictionary
+            let medicos = value?["medicos"] as? [String] ?? []
+            
+            if medicos.count > 0 {
+                medicos.forEach { item in
+                        self.reference.child("medicos").child(item).observe(.value, with: { snapshot in
+                            let value = snapshot.value as? NSDictionary
+                            let nome = value?["nome"] as? String ?? ""
+                            let telefone = value?["telefone"] as? String ?? ""
+                            let crmv = value?["crmv"] as? String ?? ""
+                            let especialidade = value?["especialidade"] as? String ?? ""
+                            
+                            let medicAux = Medico(hospitalID!, nome, especialidade, crmv, telefone)
+                            ArtemisDAO.quadroMedico?.append(medicAux)
+                        })
+                    }
+                }
+            })
+        }
+
+
+    
+    
     
     func carregarPerfil(){
         let userID = Auth.auth().currentUser?.uid
@@ -173,6 +230,22 @@ class ArtemisDAO {
                 } else{
                      ArtemisDAO.hospitalAtual = Hospital(nome,rua,bairro,numero,cidade,estado,cep,responsavel,telefone,emergencia,busca)
                 }
+                
+            })
+        }
+    }
+    
+    func carregarMedico(){
+        let userID = Auth.auth().currentUser?.uid
+        reference = Database.database().reference()
+        if(userID != nil){
+            print(userID!)
+            reference.child("medicos").child(userID!).observe(.value, with: { snapshot in
+                let value = snapshot.value as? NSDictionary
+                let nome = value?["nome"] as? String ?? ""
+                let telefone = value?["telefone"] as? String ?? ""
+                let crmv = value?["crmv"] as? String ?? ""
+                let especialidade = value?["especialidade"] as? String ?? ""
                 
             })
         }

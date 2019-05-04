@@ -18,13 +18,13 @@ class CadastrarMedicoViewController: UIViewController, UIPickerViewDelegate, UIP
     @IBOutlet weak var senhaLB: UITextField!
     
     var nome:String?
-    var crvm:String?
+    var crmv:String?
     var telefone:String?
     var espec:String?
     var email:String?
     var senha:String?
     var artemisDAO = ArtemisDAO()
-    var especialidades:[String] = ["Acupuntura","Cardiologia","Clinica Geral","Dermatologia","Homeopatia","Oncologia","Patologia"]
+    var especialidades:[String] = ArtemisDAO.especialidadesVeterinarias
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,18 +53,14 @@ class CadastrarMedicoViewController: UIViewController, UIPickerViewDelegate, UIP
         return especialidades[row]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-      espec = especialidades[row]
-    }
-
     @IBAction func cadastrarMedico(_ sender: Any) {
        nome = nomeLB.text!
-       crvm = crvmLB.text!
+       crmv = crvmLB.text!
    telefone = telefoneLB.text!
       email = emailLB.text!
       senha = senhaLB.text!
         let especialidade = especialidades[especPV.selectedRow(inComponent: 0)]
-        let medicoAux = Medico("", nome!, especialidade, crvm!, telefone!)
+        let medicoAux = Medico("", nome!, especialidade, crmv!, telefone!)
         
         artemisDAO.cadastrarMedico(email!,senha!,medicoAux,self)
         

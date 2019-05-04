@@ -15,6 +15,9 @@
 		133BDB34225809FD00AA0B29 /* logoTIPObeta.png in Resources */ = {isa = PBXBuildFile; fileRef = 133BDB33225809FD00AA0B29 /* logoTIPObeta.png */; };
 		133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */; };
 		133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BDB372258160700AA0B29 /* ArtemisDAO.swift */; };
+		1351BD27227CFDDB00D1C275 /* MedicosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351BD26227CFDDB00D1C275 /* MedicosTableViewController.swift */; };
+		1351BD29227D080F00D1C275 /* LocaisTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351BD28227D080F00D1C275 /* LocaisTableViewController.swift */; };
+		1351BD2D227D10FE00D1C275 /* MedicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1351BD2C227D10FE00D1C275 /* MedicTableViewCell.swift */; };
 		136F5AF0226549A3009A22AE /* ic_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AEF226549A3009A22AE /* ic_calendar.png */; };
 		136F5AF222654ADB009A22AE /* ic_dog.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF122654AD7009A22AE /* ic_dog.png */; };
 		136F5AF422654C1D009A22AE /* ic_esteto.png in Resources */ = {isa = PBXBuildFile; fileRef = 136F5AF322654C19009A22AE /* ic_esteto.png */; };
@@ -67,6 +70,9 @@
 		133BDB33225809FD00AA0B29 /* logoTIPObeta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTIPObeta.png; sourceTree = "<group>"; };
 		133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		133BDB372258160700AA0B29 /* ArtemisDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtemisDAO.swift; sourceTree = "<group>"; };
+		1351BD26227CFDDB00D1C275 /* MedicosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicosTableViewController.swift; sourceTree = "<group>"; };
+		1351BD28227D080F00D1C275 /* LocaisTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaisTableViewController.swift; sourceTree = "<group>"; };
+		1351BD2C227D10FE00D1C275 /* MedicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicTableViewCell.swift; sourceTree = "<group>"; };
 		136F5AEF226549A3009A22AE /* ic_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_calendar.png; sourceTree = "<group>"; };
 		136F5AF122654AD7009A22AE /* ic_dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_dog.png; sourceTree = "<group>"; };
 		136F5AF322654C19009A22AE /* ic_esteto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_esteto.png; sourceTree = "<group>"; };
@@ -124,6 +130,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1351BD24227CEC6B00D1C275 /* Cadastros */ = {
+			isa = PBXGroup;
+			children = (
+				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
+				1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */,
+				5740FC8D227CD45D0091EC82 /* CadastrarMedicoViewController.swift */,
+			);
+			path = Cadastros;
+			sourceTree = "<group>";
+		};
+		1351BD25227CFDBA00D1C275 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				1351BD26227CFDDB00D1C275 /* MedicosTableViewController.swift */,
+				1351BD28227D080F00D1C275 /* LocaisTableViewController.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
 		1390CF72225EA9E900DA8658 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +157,7 @@
 				1390CF89225EBFDA00DA8658 /* Hospital.swift */,
 				57F1015B227CC23200054D4E /* Medico.swift */,
 				57F1015D227CC2A100054D4E /* Consulta.swift */,
+				1351BD2C227D10FE00D1C275 /* MedicTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -150,13 +176,12 @@
 		1390CF74225EA9FF00DA8658 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1351BD25227CFDBA00D1C275 /* Tables */,
+				1351BD24227CEC6B00D1C275 /* Cadastros */,
 				57F10161227CCA0700054D4E /* Perfis */,
-				133BDB3522580E5900AA0B29 /* CadastrarViewController.swift */,
 				13CA37BA2255729E006BF2C6 /* ViewController.swift */,
 				13CA37B82255729E006BF2C6 /* AppDelegate.swift */,
-				1375B8192261400E00A1958D /* CadastrarHospitalViewController.swift */,
 				13384667226E956E00C93AAC /* HospitaisViewController.swift */,
-				5740FC8D227CD45D0091EC82 /* CadastrarMedicoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -417,15 +442,18 @@
 				1375B81A2261400E00A1958D /* CadastrarHospitalViewController.swift in Sources */,
 				57F1015E227CC2A100054D4E /* Consulta.swift in Sources */,
 				5740FC8E227CD45D0091EC82 /* CadastrarMedicoViewController.swift in Sources */,
+				1351BD27227CFDDB00D1C275 /* MedicosTableViewController.swift in Sources */,
 				1390CF8A225EBFDA00DA8658 /* Hospital.swift in Sources */,
 				133BDB382258160700AA0B29 /* ArtemisDAO.swift in Sources */,
 				57F1015C227CC23200054D4E /* Medico.swift in Sources */,
+				1351BD2D227D10FE00D1C275 /* MedicTableViewCell.swift in Sources */,
 				13CA37BB2255729E006BF2C6 /* ViewController.swift in Sources */,
 				1390CF86225EAEC100DA8658 /* User.swift in Sources */,
 				133BDB3622580E5900AA0B29 /* CadastrarViewController.swift in Sources */,
 				13CA37B92255729E006BF2C6 /* AppDelegate.swift in Sources */,
 				57F10160227CC9F500054D4E /* PerfilHospitalViewController.swift in Sources */,
 				13D73F6D225C22940063C676 /* PerfilViewController.swift in Sources */,
+				1351BD29227D080F00D1C275 /* LocaisTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

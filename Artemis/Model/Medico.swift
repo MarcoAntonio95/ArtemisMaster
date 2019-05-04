@@ -13,14 +13,14 @@ class Medico {
     var nome:String?
     var especialidade:String?
     var consultas:String?
-    var crvm:String?
+    var crmv:String?
     var telefone:String?
     
-    init(_ hospital:String, _ nome:String, _ especialidade:String, _ crvm:String, _ telefone:String) {
+    init(_ hospital:String, _ nome:String, _ especialidade:String, _ crmv:String, _ telefone:String) {
         self.hospital = hospital
         self.nome = nome
         self.especialidade = especialidade
-        self.crvm = crvm
+        self.crmv = crmv
         self.telefone = telefone
     }
 }
